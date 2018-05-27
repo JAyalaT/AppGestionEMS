@@ -23,12 +23,12 @@ namespace AppGestionEMS.Migrations
 			AddRole(context, roleAdmin);
 			AddRole(context, roleProfe);
 			AddRole(context, roleAlumno);
-			AddUser(context, "xxxxxxx", "xxxxxxx", "xx@upm.es", roleAdmin);
+			AddUser(context, "Administrador", "Apellidos", "admin@upm.es", roleAdmin);
 			AddUser(context, "Carolina", "apellidos", "carolina.gallardop@upm.es", roleProfe);
-			AddUser(context, "Jorge", "Ayala", "j.ayala@upm.es", roleAlumno);
-			AddUser(context, "Abid", "Benomar", "ficticio1@alumnos.upm.es", roleAlumno);
-			AddUser(context, "Marcos", "apellidos", "ficticio2@alumnos.upm.es", roleAlumno);
-			AddUser(context, "Jose", "apellidos", "ficticio3@alumnos.upm.es", roleAlumno);
+			AddUser(context, "Jorge", "Ayala", "j.ayala@alumnos.upm.es", roleAlumno);
+			AddUser(context, "Abid", "Benomar", "abid.benomar.amghar@alumnos.upm.es", roleAlumno);
+			AddUser(context, "Marcos", "apellidos", "m.burdalo@alumnos.upm.es", roleAlumno);
+			AddUser(context, "Jose", "apellidos", "jose.torrero.sacido@alumnos.upm.es", roleAlumno);
 		}
 		public void AddRole(ApplicationDbContext context, String role)
 		{
